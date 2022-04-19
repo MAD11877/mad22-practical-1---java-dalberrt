@@ -10,15 +10,15 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
-    Scanner measureScan = new Scanner(System.in);     //should u use the same scanner for two thingys?
+    Scanner in = new Scanner(System.in);
     System.out.print("Enter your height(m): ");
-    double height = measureScan.nextDouble();
+    double height = in.nextDouble();
 
     System.out.print("Enter your weight(kg): ");
-    double weight = measureScan.nextDouble();
+    double weight = in.nextDouble();
     double bmi = weight / (height*height);
     System.out.print("Your BMI is: " + bmi);
 
-    measureScan.close();
+    in.close();
   }
 }
