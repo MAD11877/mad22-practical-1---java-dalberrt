@@ -27,6 +27,33 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.print("Enter number of integers: ");
+    int inputs = in.nextInt();
+    int[] inputList = new int[inputs];
+
+    for (int i = 0; i < inputs; i++){
+      int number = in.nextInt();
+      inputList[i] = number;
+    }
+
+    int highestNum = 0;
+    int highestCount = 0;
+    for (int i : inputList){
+      int count = 0;
+      for (int x : inputList){
+        if (x == i){
+          count += 1;
+        }
+      }
+      if (count > highestCount){
+        highestCount = count;
+        highestNum = i;
+      }
+      count = 0;
+    }
+
+    System.out.println(highestNum);
+
+    in.close();
   }
 }
