@@ -27,7 +27,6 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter number of integers: ");
     int inputs = in.nextInt();
     int[] inputList = new int[inputs];
 
