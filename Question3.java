@@ -11,10 +11,9 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter an integer: ");
     int x = in.nextInt();
 
-    System.out.println("Its square value is: " + x*x);
+    System.out.println(x*x);
     in.close();
     
   }
