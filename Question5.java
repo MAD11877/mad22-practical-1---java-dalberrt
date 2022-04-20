@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -28,11 +29,10 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int inputs = in.nextInt();
-    int[] inputList = new int[inputs];
+    ArrayList<Integer> inputList = new ArrayList<>();
 
     for (int i = 0; i < inputs; i++){
-      int number = in.nextInt();
-      inputList[i] = number;
+      inputList.add(in.nextInt());
     }
 
     int highestNum = 0;
